@@ -7,9 +7,13 @@
     display: block;
     clear:both;
 }
-a {text-decoration:none;}
+a {
+    text-decoration:none;
+    color: inherit;
+}
 body {
     background-color: rgb(239, 239, 239);
+    color:#3a3a3b; 
 }
 .topNavBar {
     position: fixed;
@@ -39,7 +43,7 @@ body {
     padding-bottom:35px;
 }
 .topNavBar nav a {
-    color: rgba(252, 255, 255, 0.7);
+    color: rgb(183, 183, 183);
     text-decoration: none;
 }
 .topNavBar nav ul {
@@ -73,6 +77,7 @@ body {
     margin-left:auto;
     margin-right: auto;
     background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(70, 70, 70, 0.75);
 }
 .userCard .welcome {
     background-color: rgb(230, 104, 106);
@@ -144,4 +149,39 @@ body {
     height: 30px; 
     fill: white;
     vertical-align: top;
+}
+
+body main {
+      margin-top: -340px;
+}
+body main .download {
+    text-align: center;
   }
+body main .downloadResume {
+     font-size: 14px;
+     font-weight: bold;
+     border: 1px solid rgb(205, 207, 209);
+     padding: 21px 56px;
+     display: inline-block;
+     margin: 32px;
+     transition: box-shadow 0.2s;
+}
+body main .downloadResume:hover {
+    box-shadow: 0px 4px 17px 0px rgba(100, 100, 100, 0.3);
+}
+.selfIntroduction {
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: "微软雅黑";
+    line-height: 1.5;
+}
+.skills h2,
+.works h2 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.8;
+    margin: 34px auto;
+}
