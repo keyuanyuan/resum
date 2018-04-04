@@ -178,10 +178,99 @@ body main .downloadResume:hover {
     font-family: "微软雅黑";
     line-height: 1.5;
 }
+h3 {font-weight: normal;}
+.skills,
+.works {
+max-width: 940px;
+margin: 0 auto;
+}
 .skills h2,
 .works h2 {
     text-align: center;
-    font-size: 32px;
-    line-height: 1.8;
-    margin: 34px auto;
+    font-size: 34px;
+    margin: 66px auto 34px;
 }
+.skills h3 {
+    font-size: 13px;
+}
+.skills ol {
+    background: #fff;
+    list-style: none;
+    padding: 0 50px 48px;
+    box-shadow: 0px 0px 5px 0px rgba(80, 80, 80, 0.5);
+    
+}
+.skills ol li {
+    float: left;
+    width: 48%;
+    margin-top: 46px;
+    
+}
+.skills ol li:nth-child(even) {
+    float: right;
+}
+.skills .progressBar {
+    height: 5px;
+    background: #fae1e1;
+    border-radius: 2px;
+    margin-top: 4px;
+}
+.skills .progress {
+    height: 100%;
+    width: 50%;
+    background: #e6686a;
+    border-radius: 2px;
+}
+
+.works nav{
+    text-align: center;
+    margin: 28px auto;
+}
+.works nav ol {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+.works nav ol li {
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+    
+}
+.works nav ol li:first-child {
+    margin-left: 0px;   
+}
+.works .bar {
+    height: 5px;
+    width: 238px;
+    background: #fff;
+    border-radius: 2px;
+    margin: 6px auto;
+}
+.works .bar-inner {
+    height: 100%;
+    background: #e6686a;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+.works .bar.state-1 .bar-inner {
+    margin-left: 0;
+    width: 50px;
+}
+.works .bar.state-2 .bar-inner {
+    margin-left: 65px;
+    width: 50px;
+}
+.works .bar.state-3 .bar-inner {
+    margin-left: 140px;
+    width: 98px;
+}
+
+.works .jobs{
+    position: relative;
+}
+.works .jobs .big,
+.works .jobs .small {
+    position: absolute;
+  }
