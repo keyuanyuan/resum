@@ -100,13 +100,14 @@ body {
     float: left;
     margin-left:17px;
     margin-right:17px;
+    position: relative;
 }
 .topNavBar nav ul li a {
     border-bottom: 3px solid transparent;
     padding-bottom:5px;
     position: relative;
 }
-.topNavBar nav ul li a:hover::after{
+.topNavBar nav ul li.active>a::after{
     content:'';
     width: 100%;
     height: 3px;
@@ -119,6 +120,27 @@ body {
 @keyframes menuSlide {
     0% {width: 0;}
     100% {width: 100%;}
+}
+.topNavBar nav ul li .submenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+    margin: 7px 0;
+    display: none;
+}
+.topNavBar nav ul li.active .submenu {
+    display: block;
+    animation: submenuSlide 0.3s;
+}
+@keyframes submenuSlide {
+    0% {margin-right: 100%}
+    100% {margin-right: 0;}
+}
+.topNavBar nav ul li .submenu li {
+    padding: 5px 0;
+    white-space: nowrap;
 }
 .banner {
     background-image: url(./img/rs-cover.jpg);
@@ -327,6 +349,7 @@ margin: 0 auto;
 
 .works .jobs{
     position: relative;
+    margin-bottom: 80px;
 }
 .works .jobs .big,
 .works .jobs .small {
