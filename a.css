@@ -286,16 +286,19 @@ margin: 0 auto;
 }
 .messages {
     margin-bottom: 200px;
-}
-.messages ol {
     max-width: 668px;
     margin: 10px auto;
+}
+.messages ol {
+
 
 }
 .messages ol li {
     border-bottom: 1px solid #cdcfd1;
     padding: 10px;
-
     font-size: 15px;
     font-family: "微软雅黑";
+}
+.messages form {
+    padding: 40px 10px;
 }

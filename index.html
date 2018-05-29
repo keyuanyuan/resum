@@ -178,7 +178,7 @@
   </section>
   <section data-x class="messages">
     <h2>留言板</h2>
-    <ol class="messageList">
+    <ol class="messageList" id="messageList">
       <li>留言1</li>
       <li>留言2</li>
       <li>留言1</li>
@@ -190,10 +190,17 @@
       <li>留言7</li>
       <li>留言8</li>
     </ol>
+    <form id="postMessageForm">
+      访客名：<input type="text" name="guestName">
+      留言：<input type="text" name="content">
+      <input type="submit" value="提交">
+    </form>
   </section>
 
   <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.7.0/dist/av-min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/js/swiper.min.js"></script>
+  <script src="./message.js"></script>
   <script>
     var mySwiper = new Swiper('.swiper-container', {
       loop: true,
