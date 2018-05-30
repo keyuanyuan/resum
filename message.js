@@ -21,26 +21,27 @@ myForm.addEventListener('submit', function (e) {
         guestName: guestName,
         content: content,
     }).then(function (object) {
-        alert('存入成功!')
+        // 自动刷新页面
+        window.location.reload()
     })
 })
 
 var query = new AV.Query('Message')
-query.find()
-    .then(function (messages) {
-        console.log(messages)
-        console.log(messages[0].attributes)
-        console.log(messages[1].attributes)
+query.find().then(function (messages) {
+        // console.log(messages)
+        // console.log(messages[1].attributes)
+        // console.log(messages[2].attributes)
         let array = messages.map((item)=> item.attributes)
+        console.log(array)
         array.forEach((item)=> {
             let li = document.createElement('li')
-            li.innerText = item.content
-            let messageList = docement.querySlector('#messageList')
+            li.innerText = `${item.guestName} : ${item.content}`
+            let messageList = document.querySelector('#messageList')
             messageList.appendChild(li)
-        });
+        })
     }, function (error) {
         // 异常处理
-    }).then(()=>{},(error)=>{
+    }).then(()=>{},(erroe)=>{
         console.log(error)
     })
 

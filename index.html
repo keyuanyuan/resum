@@ -3,8 +3,8 @@
 
 <head>
   <title>园园的resume</title>
-  <link rel="stylesheet" href="./a.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/css/swiper.min.css">
+  <link rel="stylesheet" href="./a.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
   <script src="./iconfont/iconfont.js"></script>
   <style type="text/css">
@@ -163,14 +163,16 @@
   </section>
   <section data-x id="siteWorks" class="works">
     <h2>作品集</h2>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <img src="./img/navigation.png" class="swiper-slide">
-        <img src="./img/canvas.png" class="swiper-slide">
-        <img src="./img/slide.png" class="swiper-slide">
+    <div class="mySlide">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <img src="./img/navigation.png" class="swiper-slide">
+          <img src="./img/canvas.png" class="swiper-slide">
+          <img src="./img/slide.png" class="swiper-slide">
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- 如果需要分页器 -->
-      <div class="swiper-pagination"></div>
       <!-- 如果需要导航按钮 -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
@@ -179,20 +181,11 @@
   <section data-x class="messages">
     <h2>留言板</h2>
     <ol class="messageList" id="messageList">
-      <li>留言1</li>
-      <li>留言2</li>
-      <li>留言1</li>
-      <li>留言2</li>
-      <li>用户：2333333</li>
-      <li>留言4</li>
-      <li>留言5</li>
-      <li>用户5：呼吸机hi市场你啦</li>
-      <li>留言7</li>
-      <li>留言8</li>
     </ol>
     <form id="postMessageForm">
-      访客名：<input type="text" name="guestName">
-      留言：<input type="text" name="content">
+      访客名：
+      <input type="text" name="guestName"> 留言：
+      <input type="text" name="content">
       <input type="submit" value="提交">
     </form>
   </section>

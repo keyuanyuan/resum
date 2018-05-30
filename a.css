@@ -1,10 +1,5 @@
-* {
-    margin:0px;
-    padding:0px;
-}
-ol {
-    list-style: none;
-}
+* {margin:0px;padding:0px;}
+ol {list-style: none;}
 .clearfix::after {
     content:' ';
     display: block;
@@ -49,7 +44,7 @@ body {
 }
 .topNavBar .logo .rs {
     color:rgb(230, 104, 106);
-    margin-right:12px;
+    margin-right:4px;
 }
 .topNavBar .logo .card {
     color:#9a9da2;
@@ -278,12 +273,23 @@ margin: 0 auto;
 .skills.offset .progress {
     transform: translateX(-100%)
 }
-
+.works .mySlide {
+    position: relative;
+}
 .works .swiper-container {
     width: 668px;
     height: 501px;
     box-shadow: 0px 0px 5px 0px rgba(80, 80, 80, 0.5);
 }
+.works .swiper-button-prev,
+.works .swiper-button-next {
+    background-color: white;
+    border-radius: 50%;
+    outline: none;
+    width: 54px;
+    height: 54px;
+}
+
 .messages {
     margin-bottom: 200px;
     max-width: 668px;
